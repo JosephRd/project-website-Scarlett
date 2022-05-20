@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #FAD9E6; */
+}
+
+header{
+    background-color: #FAD9E6;
+}
+
+#sectionCategory{
+    background-color: #FAD9E6;
+}
+
+/* navbar */
+.logoSc{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoSc a{
+    margin-left: 10px;
+    font-weight: bold;
+}
+/*  */
+
+#category{
+    display: flex;
+    justify-content: center;
+    padding: 2% 3%;
+}
+
+#title1{
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+}
+
+.line1{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    margin-left: 450px;
+    margin-right: -30px;
+}
+.line1 a{
+    margin-top: 6px;
+}
+
+.body-care{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    margin-left: 360px;
+    margin-right: 360px;
+    margin-top: -30px;
+}
+
+.bodyctg h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#space{
+    color: rgb(250, 217, 230);
+    margin-top: -14px;
+}
+
+.bodyctg h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.bodyctg a p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 85px;
+    background-color: rgb(153, 153, 153);
+    padding: 7px;
+    display: flex;
+    text-align: center;
+    margin-left: 105px;
+    text-decoration: none;
+    border: 3px solid black;
+    font-weight: bolder;
+}
+
+#title2{
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+.face-care{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    margin-left: 360px;
+    margin-right: 360px;
+    margin-top: -30px;
+}
+
+.facectg h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#space1{
+    color: rgb(250, 217, 230);
+    margin-top: -14px;
+}
+
+#space2{
+    color: rgb(250, 217, 230);
+    margin-top: -14px;
+}
+.facectg h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.facectg a p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 85px;
+    background-color: rgb(153, 153, 153);
+    padding: 7px;
+    display: flex;
+    text-align: center;
+    margin-left: 105px;
+    text-decoration: none;
+    border: 3px solid black;
+    font-weight: bolder;
+}
+
+#title3{
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+.hair-care{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    margin-left: 359px;
+    margin-right: 742px;
+    margin-top: -30px;
+}
+
+.hairctg h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#space1{
+    color: rgb(250, 217, 230);
+    margin-top: -14px;
+}
+
+#space2{
+    color: rgb(250, 217, 230);
+    margin-top: -14px;
+}
+.hairctg h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hairctg a p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 85px;
+    background-color: rgb(153, 153, 153);
+    padding: 7px;
+    display: flex;
+    text-align: center;
+    margin-left: 105px;
+    text-decoration: none;
+    border: 3px solid black;
+    font-weight: bolder;
+}
+
+/* Footer */
+footer{
+    background-color: #C1A3A3;
+}
+
+.fKiri{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fKiri-nama span{
+    font-family: 'Oleo Script', cursive;
+}
+
+.fKanan p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px 0 3px 0;
+}
+
+@media (max-width: 768px){
+    .fKanan{
+        padding-top: 20px;
+    }
+}

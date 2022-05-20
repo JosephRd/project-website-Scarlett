@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FAD9E6;
+}
+
+/* Waves paling atas */
+.custom-shape-divider-top-1652971301 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1652971301 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1652971301 .shape-fill {
+    fill: white;
+}
+
+/* navbar */
+
+.logoSc{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoSc a{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+/* BANNER */
+.carousel-item{
+    height: 27rem;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+#carousel{
+    margin-top: 15px;
+}
+
+/* Category */
+#category{
+    background-color: #FAD9E6;
+}
+
+.button-category img{
+    border: 3px solid white;
+}
+
+.button-category img:hover{
+    animation: pulsate 2s ease-in-out;
+    height: 110%;
+}
+
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 25px white,
+        0 0 50px white;
+    }
+}
+
+
+
+/* Waves atas advantages */
+.custom-shape-divider-top-advantages {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-advantages svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-advantages .shape-fill {
+    fill: white;
+}
+
+
+/* Advantages */
+#advantages{
+    background-color: white;
+}
+
+
+/* Testimonial */
+#testimonial{
+    background-color: #FAD9E6;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Footer */
+footer{
+    background-color: #C1A3A3;
+}
+
+.fKiri{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fKiri-nama span{
+    font-family: 'Oleo Script', cursive;
+}
+
+.fKanan p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px 0 3px 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px){
+    .catRespon, .advRespon, .testiRespon{
+        padding-top: 30px;
+    }
+    .fKanan{
+        padding-top: 20px;
+    }
+}
