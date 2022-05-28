@@ -11,9 +11,28 @@ header{
     background-color: #FAD9E6;
 }
 
-#sectionCategory{
-    background-color: #FAD9E6;
+/* Waves paling atas */
+.custom-shape-divider-top-1652971301 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
+
+.custom-shape-divider-top-1652971301 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-top-1652971301 .shape-fill {
+    fill: white;
+}
+
+
 
 /* navbar */
 .logoSc{
@@ -26,6 +45,10 @@ header{
     font-weight: bold;
 }
 /*  */
+
+/* #sectionCategory{
+    background-color: #FAD9E6;
+}
 
 #category{
     display: flex;
@@ -191,7 +214,7 @@ header{
     text-decoration: none;
     border: 3px solid black;
     font-weight: bolder;
-}
+} */
 
 /* Footer */
 footer{
