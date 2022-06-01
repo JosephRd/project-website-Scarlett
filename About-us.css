@@ -46,7 +46,11 @@ header{
 
 /* about us */
 #about-us{
-    padding: 4rem 0 4rem 0;
+    padding: 6rem 0 6rem 0;
+}
+
+.aboutJarak{
+    padding-top: 5rem;
 }
 
 
