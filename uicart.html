@@ -9,50 +9,66 @@
     <link rel="stylesheet"href="uicart.css">
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <!-- AOS JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   </head>
   <body>
-    <section>
-        <nav class="navbar navbar-expand-lg main-navbar bg-color main-navbar-color"
-        id="main-navbar">
-        <div class="container">
-            <div class="d-flex">
-                <img src="images/image 3.png"alt="">
+    <!-- NAVBAR -->
+    <header style="z-index: 2; position: relative;">
+        <nav class="navbar navbar-expand-lg"></nav>
+            <div class="container logoSc">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo scarlett.png" alt="" width="80" height="80" class="d-inline-block align-text-top">
+                    <a class="nav-link" href="#">Reveal Your Beauty</a>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                </ul>
+                <div class="cartLogin">
+                  <a href="./uicart.html"><img src="./images/cart logo.png" alt="" width="40" height="40" class="cartLogo d-inline-block align-text-top"></a>
+                  <a href=""><img src="./images/user logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top"></a>
+               </div>
             </div>
-            <!-- <a class="navbar-brand" href="#">Take Away</a> -->
-            <li class="nav-item">
-                <a href="#"class="nav-link">Reveal Your Beauty</a>
-            </li>
-            <div class="order-lg-last btn-group">
-                <i class="fas fa-shopping-bag fa-3x"></i>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./category.html">Category</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./About-Us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./allProduct.html">Shop</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#myNav" aria-controls="nav" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i></button>
-        <div class="collapse navbar-collapse"id="myNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Category</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#"class="nav-link">Shop</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-        </nav>
-        <!--End of Nav-->
-    </section>
+          </nav>
+
+    </header>
+
+
     <!---Hero Section-->
-    <section id="hero">
+    <section id="hero" >
         <div class="hero-container">
             <div class="hero-logo">
                 <h1 class="font-center-weight-bold">My Cart</h1>
@@ -61,12 +77,12 @@
     </section>
     <!---End of Hero Section-->
     <!--Cart Section-->
-    <section class="mt-5">
+    <section class="mt-5" data-aos="flip-up"  data-aos-duration="1000" data-aos-once="true">
         <div class="container">
             <div class="cart">
             <div class="table-responsive">
                 <table class="table">
-                    <thead class="thead-dark">
+                    <thead class="text-white bg-dark">
                         <tr>
                             <th scope="col"class="text-white">Product</th>
                             <th scope="col"class="text-white">Price</th>
@@ -162,7 +178,9 @@
             </div>
         </div>
     </section>
-    <div class="col-lg-4 offset-lg-4">
+
+    <!-- CHECKOUT -->
+    <div class="col-lg-4 offset-lg-4 checkout" style="padding: 5rem 0 5rem 0;" data-aos="flip-down"  data-aos-duration="1000" data-aos-once="true">
         <div class="checkout">
             <ul>
                 <li class="subtotal">subtotal
@@ -175,44 +193,48 @@
             <a href="#"class="proceed-btn">Proceed to Checkout</a>
         </div>
     </div>
-    <!-- footer -->
-    <div class="cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div id="CompanyTitle">
-                            Copyright © 2022 Scarlett Whitening Us
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-md-end">
-                        <div class="social-icon mr-4">
-                            <p class="mb-0 d-flex">
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-tiktok"></i>
-                                </a>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="d-flex align-items-center justify-content-center">
-                                    <i class="gmail">scarletwhitening@gmail.com</i>
-                                </a>
-                            </p>
-                        </div>
+    
+    <!-- FOOTER -->
+    <footer>
+        <div class="container marketing pt-5 pb-4">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <div class="fKiri">
+                    <p class="fs-3">Scarlett Whitening</p>
+                    <img src="./images/line.png" alt="">
+                    <div class="fKiri-nama">
+                        <p><span class="fs-5">Felicia Angelista</span>  <br> Copyright © 2022 Scarlett Whitening Us</p>
                     </div>
                 </div>
+              </div>
+
+
+              <div class="col-md-6 text-center fKanan">
+                <div class="logo-sosmed">
+                  <a href=""><img src="./images/facebook.png" alt=""></a>
+                  <a href=""><img src="./images/ig.png" alt=""></a>
+                  <a href=""><img src="./images/tiktok.png" alt=""></a>
+                  <a href=""><img src="./images/wa.png" alt=""></a>
+                </div>
+                <p>scarlett.whitening@gmail.com</p>
+              </div>
             </div>
         </div>
-    </div>  
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   </body>
 </html>
