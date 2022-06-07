@@ -1,4 +1,6 @@
-Untuk sekarang progress kami adalah bagian Home, AboutUs, dan Category
+Berikut adalah Project Multimedia kelompok kami
 
-Untuk melihat hasil progress kami, dapat di download dahulu seluruh filenya
-Terima kasih
+Untuk melihat hasil project, dapat di download terlebih dahulu seluruh filenya,
+kemudian untuk bagian Home dapat dimulai dari file index.html.
+
+Terima kasih Bu
