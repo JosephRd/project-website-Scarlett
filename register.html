@@ -36,7 +36,7 @@
                 </ul>
                 <div class="cartLogin">
                   <a href="./uicart.html"><img src="./images/cart logo.png" alt="" width="40" height="40" class="cartLogo d-inline-block align-text-top"></a>
-                  <a href=""><img src="./images/user logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top"></a>
+                  <a href="./register.html"><img src="./images/user logo.png" alt="" width="40" height="40" class="d-inline-block align-text-top"></a>
                </div>
             </div>
         
@@ -70,13 +70,17 @@
           </nav>
     </header>
 
-
-      <section id="register">
-        <h1 class="text-center fs-1" style="padding: 5rem 0; width: 100%; height: 20vh; background-color: #FAD9E6;">Register</h1>
+    <!-- REGISTER -->
+      <section id="register" data-aos="fade-down"  data-aos-duration="1000" data-aos-once="true">
+        <h1 class="text-center fs-1" style="padding: 5rem 0; width: 100%; height: 20vh; background-color: #FAD9E6;"
+        >Register</h1>
       
 
-        <div class="container" style="padding: 8rem 0;">
+        <div class="container" style="padding: 7rem 0;">
           <form class="row g-3 needs-validation" novalidate>
+            <label class="form-check-label" for="invalidCheck">
+              <a href="./login.html">Already have Account?</a>
+            </label>
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">First name</label>
               <input type="text" class="form-control" id="validationCustom01" required>
@@ -92,12 +96,12 @@
               </div>
             </div>
             <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Username</label>
+              <label for="validationCustomUsername" class="form-label">Email</label>
               <div class="input-group has-validation">
                 <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
-                  Please choose a username.
+                  Please provide a valid email.
                 </div>
               </div>
             </div>
@@ -120,6 +124,13 @@
               <input type="text" class="form-control" id="validationCustom05" required>
               <div class="invalid-feedback">
                 Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Password</label>
+              <input type="password" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a good Password.
               </div>
             </div>
             <div class="col-12">
