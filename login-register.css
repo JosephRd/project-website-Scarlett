@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FAD9E6;
+}
+
+/* navbar */
+.logoSc{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoSc a{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+/* Register */
+#hero{
+  display:table;
+  width: 100%;
+  height: 20vh;
+}
+
+/* Footer */
+footer{
+    background-color: #C1A3A3;
+}
+
+.fKiri{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fKiri-nama span{
+    font-family: 'Oleo Script', cursive;
+}
+
+.fKanan p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px 0 3px 0;
+}
+
+@media (max-width: 768px){
+    .fKanan{
+        padding-top: 20px;
+    }
+}
